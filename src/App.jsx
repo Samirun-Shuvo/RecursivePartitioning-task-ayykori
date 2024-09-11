@@ -1,15 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import TaskOne from "./components/TaskOne";
+import TaskTwo from "./components/TaskTwo";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      app
-    </>
-  )
-}
+    <div>
+      <div className="min-h-screen">
+        <TaskOne></TaskOne>
+      </div>
+      <div className="h-1 bg-red-700">
+        <hr />
+      </div>
+      <div className="min-h-screen">
+        <TaskTwo></TaskTwo>
+      </div>
+    </div>
+  );
+};
 
-export default App
+export default App;
